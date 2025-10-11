@@ -1,0 +1,19 @@
+{
+    "watermark_scheme": "KGW",
+    "watermark_config": "config/KGW.json",
+    "attacks": {
+        "input_file": "results/generated/gpt2_kgw_watermarked.jsonl",
+        "output_dir": "results/attacks",
+        "enabled_types": ["copy_paste", "guided_continuation", "guided_paraphrase"],
+        "conditional_saving": true,
+        "log_rejections": true
+    },
+    "openai": {
+        "model": "gpt-4o",
+        "temperature": 0.3
+    },
+    "model": {
+        "model_name": "gpt2",
+        "device": "cuda"
+    }
+}

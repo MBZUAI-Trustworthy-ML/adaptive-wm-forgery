@@ -4,7 +4,7 @@ nltk
 jieba
 accelerate
 SentencePiece
-openai==0.28
+openai>=1.0
 matplotlib
 Cython
 Pillow==9.4.0

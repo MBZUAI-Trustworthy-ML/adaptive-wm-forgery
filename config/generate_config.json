@@ -1,0 +1,23 @@
+{
+    "watermark_scheme": "KGW",
+    "watermark_config": "config/KGW.json",
+    "model": {
+        "model_name": "gpt2",
+        "device": "cuda"
+    },
+    "generation": {
+        "max_new_tokens": 200,
+        "min_length": 0,
+        "do_sample": true,
+        "no_repeat_ngram_size": 4,
+        "temperature": 1.0,
+        "top_p": 1.0,
+        "top_k": 0
+    },
+    "input_output": {
+        "prompts_file": "dataset/c4/processed_c4.json",
+        "num_samples": 5,
+        "output_dir": "results/generated",
+        "watermarked": true
+    }
+}
